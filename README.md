@@ -1,90 +1,161 @@
-# 🏨 EDA in Hospitality Domain – AtliQ Hotels
+# 🏨 Hospitality Domain Data Analysis Project (AtliQ Hotels)
 
-This project is an Exploratory Data Analysis (EDA) of AtliQ Hotels’ booking dataset, aiming to extract actionable insights from raw booking and revenue data using Python and popular data science libraries.
+This project explores and analyzes booking data from AtliQ Hotels using Python and EDA techniques.  
+It aims to uncover insights into platform usage, revenue trends, occupancy patterns, and customer experience — helping the company make smarter business decisions.
 
-> ⚠️ **Disclaimer:** This project uses **dummy/demo data** for learning and demonstration purposes only. It does not reflect real business performance.
+> 📊 This project is part of my learning journey through the **Data Science Foundation Bootcamp** by Codebasics.
 
 ---
 
-## 📚 Table of Contents
+## 📌 Agenda
 
-- [Problem Statement](#problem-statement)
-- [Project Objectives](#project-objectives)
-- [EDA Process](#eda-process)
-- [Key Insights](#key-insights)
-- [Technical Skills Used](#technical-skills-used)
-- [About Me](#about-me)
-- [License](#license)
+- Problem Statement  
+- Data Collection & Understanding  
+- Data Cleaning  
+- Data Transformation  
+- Exploratory Data Analysis (EDA)  
+- Insights & Recommendations  
 
 ---
 
 ## ❓ Problem Statement
 
-AtliQ Hotels wants to better understand its **booking performance**, **platform distribution**, and **revenue trends** to make data-driven decisions for future business growth.
+The hospitality industry is highly competitive and data-driven. AtliQ Hotels wants to extract actionable insights from their unstructured booking data. The goal is to identify revenue patterns, booking behavior, and operational inefficiencies to support better decision-making.
 
 ---
 
-## 🎯 Project Objectives
+## 🗂️ Dataset Overview
 
-1. Perform data cleaning and transformation on raw booking data.
-2. Uncover trends and patterns using visualizations.
-3. Generate business-focused insights to support strategic planning.
-
----
-
-## 🔍 EDA Process
-
-- ✅ Handled missing values and inconsistent entries
-- ✅ Transformed and normalized columns (e.g., date parsing, revenue scaling)
-- ✅ Performed univariate and bivariate analysis
-- ✅ Visualized platform-wise revenue and city-wise booking distributions
-- ✅ Generated insights through clear storytelling
+- Duration: **3 months of booking data**
+- Total records: **~1.4 lakh rows**
+- Files included:
+  - `dim_date.csv`
+  - `dim_hotels.csv`
+  - `dim_rooms.csv`
+  - `fact_aggregated_bookings.csv`
+  - `fact_bookings.csv`
 
 ---
 
-## 📈 Key Insights
+## 🧹 Data Cleaning
 
-- **Booking Platform Distribution:**  
-  - "Others" is the most used platform (~55k bookings), followed by MakeMyTrip and GoIbibo.
-  
-- **Direct Online Bookings:**  
-  - Around 13,000 bookings were made directly, highlighting the scope for loyalty program promotions.
-
-- **Revenue Distribution:**  
-  - A few platforms dominate the revenue share; optimizing these can improve margins.
-
-- **City-wise Trends:**  
-  - Certain cities contribute significantly more to bookings, revealing high-priority regions for marketing efforts.
+- Removed nulls and negative values in guest counts  
+- Handled duplicates and incorrect entries  
+- Standardized date formats and column names
 
 ---
 
-## 🛠️ Technical Skills Used
+## 🔄 Data Transformation
 
-- **Python Libraries:**  
-  `Pandas`, `NumPy`, `Matplotlib`, `Seaborn`, `Jupyter Notebook`
-  
-- **EDA Techniques:**  
-  Data cleaning, transformation, aggregation, and visualization
-  
-- **Version Control:**  
-  `Git`, `GitHub` for tracking changes and sharing code
+- Merged dimension and fact tables  
+- Created derived columns for month and day  
+- Aggregated revenue and occupancy metrics  
 
 ---
 
-## 👨‍💻 About Me
+## 📊 Exploratory Data Analysis (EDA)
 
-Hi, I'm **Samir Shedge**, a final-year **B.Sc. IT student** deeply interested in **data science** and **machine learning**.  
-
-📍 Nallasopara, India  
-📧 [samirshedge4153@gmail.com](mailto:samirshedge4153@gmail.com)  
-🔗 [LinkedIn Profile](https://www.linkedin.com/in/samir-shedge-9b487327a)
-
-⭐ *If you find this project helpful, please give it a star and connect on LinkedIn!*
+- Platform-wise booking and revenue analysis  
+- Occupancy trends by city and room type  
+- Guest rating distribution and performance  
+- Monthly revenue and seasonal variation  
 
 ---
 
-## 📝 License
+## 💡 Key Insights
 
-This project is open-source and available for learning and portfolio purposes with proper attribution.
+### 1. Booking Platform Distribution
+- "Others" category: **55,066 bookings**
+- MakeMyTrip: **26,898 bookings**
+- Direct bookings: **13,379**  
+→ Suggests strong reliance on 3rd-party platforms.
+
+### 2. Revenue Analysis
+- Top cities by revenue:
+  - Mumbai: ₹66.86 Cr
+  - Bangalore: ₹42.04 Cr
+  - Hyderabad: ₹32.52 Cr
+- Top properties:
+  - Atliq Exotica: ₹3.24 Cr
+  - Atliq Palace: ₹3.09 Cr
+
+### 3. Occupancy Analysis
+- Weekends: **72.34%**
+- Weekdays: **50.88%**
+- Room-wise: Presidential (59.28%), Premium (58.03%)
+
+### 4. Guest Experience
+- Highest-rated: Atliq Blu (**3.89**)
+- Lowest-rated: Atliq Seasons (**2.35**)
+
+### 5. Capacity Management
+- Overbooking at some properties (e.g., ID 17558)
 
 ---
+
+## ✅ Strategic Recommendations
+
+### Revenue Optimization
+- Promote direct bookings via website/loyalty programs  
+- Dynamic pricing for premium rooms  
+- Launch weekday offers to increase non-peak occupancy
+
+### Operational Improvements
+- Better capacity planning & room management  
+- Fix overbooking logic and guest validation errors
+
+### Marketing Focus
+- Highlight top-rated hotels like Atliq Blu  
+- Target cities like Mumbai for pricing optimization  
+- Platform-wise marketing strategy (e.g., MMT)
+
+### Guest Experience
+- Improve poor-performing properties (e.g., Atliq Seasons)  
+- Encourage post-checkout ratings with small rewards
+
+### Tech Investments
+- Enhance direct booking UX  
+- Use dynamic pricing tools  
+- Real-time dashboards for KPIs
+
+---
+
+## 🛣️ Implementation Roadmap
+
+**0–3 Months**
+- Launch direct booking campaign  
+- Fix data quality issues  
+- Start weekday promotions  
+
+**3–6 Months**
+- Improve poorly rated properties  
+- Start dynamic pricing trial  
+- Train staff on feedback handling  
+
+**6–12 Months**
+- Upgrade booking platform  
+- Explore property expansion  
+- Establish full revenue management system  
+
+---
+
+## 🏁 Conclusion
+
+By applying EDA techniques to AtliQ Hotels’ raw data, we’ve uncovered actionable insights that support improvements in revenue, occupancy, guest satisfaction, and operations. This project showcases the power of data in transforming business outcomes.
+
+---
+
+## 👤 About Me
+
+I'm **Samir Shedge**, a final-year B.Sc. IT student passionate about data science and machine learning.  
+This project is a practical milestone in my journey through the Codebasics Bootcamp.
+
+📧 Email: [samirshedge4153@gmail.com](mailto:samirshedge4153@gmail.com)  
+🔗 LinkedIn: [linkedin.com/in/samir-shedge-9b487327a](https://www.linkedin.com/in/samir-shedge-9b487327a)
+
+---
+
+## ⭐ Like this project?
+Please ⭐ the repository and feel free to connect on LinkedIn!
+
+
