@@ -1,0 +1,11 @@
+# Core Analysis
+pandas==2.1.4
+numpy==1.26.2
+
+# Visualization
+matplotlib==3.8.2
+seaborn==0.13.0
+
+# Notebook Support
+jupyter==1.0.0
+ipykernel==6.27.1
