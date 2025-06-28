@@ -3,8 +3,6 @@
 This project explores and analyzes booking data from AtliQ Hotels using Python and EDA techniques.  
 It aims to uncover insights into platform usage, revenue trends, occupancy patterns, and customer experience — helping the company make smarter business decisions.
 
-> 📊 This project is part of my learning journey through the **Data Science Foundation Bootcamp** by Codebasics.
-
 ---
 
 ## 📌 Agenda
